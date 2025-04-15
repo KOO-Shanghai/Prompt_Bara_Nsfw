@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>关键词复制器</title>
+  <title>关键词选择器</title>
   <style>
     :root {
       --primary: #000;
@@ -20,20 +20,20 @@
     header {
       background: rgba(255, 255, 255, 0.95);
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-      padding: 20px 0;
+      padding: 10px 0;
       text-align: center;
-      font-size: 28px;
+      font-size: 20px;
       font-weight: 600;
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 020;
     }
 
     .tabs, .subtabs {
       display: flex;
       justify-content: center;
-      gap: 16px;
-      padding: 12px 0;
+      gap: 8px;
+      padding: 8px 0;
       background-color: white;
       flex-wrap: wrap;
       box-shadow: inset 0 -1px 0 #eee;
@@ -42,8 +42,8 @@
     .tabs button, .subtabs button {
       background: none;
       border: none;
-      padding: 10px 20px;
-      font-size: 12px;
+      padding: 8px 3px;
+      font-size: 16px;
       cursor: pointer;
       border-radius: 10px;
       transition: all 0.3s ease;
@@ -52,7 +52,7 @@
     }
 
     .tabs button {
-      font-size: 14px; /* 16px + 15% */
+      font-size: 18.4px; /* 16px + 15% */
     }
 
     .tabs button.active,
@@ -74,11 +74,11 @@
 
     .card {
       display: grid;
-      grid-template-columns: 2.5fr 2.5fr 2fr auto;
+      grid-template-columns: 1fr 2.5fr 2fr auto;
       align-items: center;
       background: white;
       margin-bottom: 12px;
-      padding: 16px 20px;
+      padding: 8px 20px;
       border-radius: 12px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.05);
       transition: box-shadow 0.2s;
@@ -90,7 +90,7 @@
     }
 
     .card div {
-      font-size: 15px;
+      font-size: 12px;
       color: #333;
     }
 
@@ -106,7 +106,7 @@
       border-radius: 8px;
       cursor: pointer;
       transition: background-color 0.3s ease;
-      font-size: 14px;
+      font-size: 12px;
     }
 
     .card button:hover {
@@ -115,7 +115,7 @@
   </style>
 </head>
 <body>
-  <header>关键词复制器</header>
+  <header>关键词选择器</header>
 
   <div class="tabs" id="mainTabs"></div>
   <div class="subtabs" id="subTabs"></div>
